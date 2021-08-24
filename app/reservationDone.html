@@ -1,0 +1,66 @@
+---
+title: Reservation Done
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container reservationDone">
+    <h1 class="fs-3 text-center reservationDone-title mb-md-4 mb-6">立即預約</h1>
+    <div class="row">
+        <div class="col-md-6 mb-md-7 col-12 mb-9 mx-auto text-center">
+            <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic example">
+                <button type="button" class="btn reservationDone-navButton rounded-pill">選擇方案</button>
+                <button type="button" class="btn reservationDone-navButton rounded-pill mx-md-75 mx-4">填寫資料</button>
+                <button type="button" class="btn reservationDone-navButtonActive rounded-pill">完成預約</button>
+            </div>
+        </div>
+    </div>
+    <span class="material-icons-outlined reservationDone-icon text-center mb-5 d-block">
+        check_circle
+    </span>
+    <h3 class="reservationDone-subtitle text-center fs-5 mb-8">已完成預約，以下是您的預約資訊:</h3>
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-12 mx-auto text-center flex-nowrap mb-6">
+            <a class="btn reservationDone-navButtonActive w-100 d-flex justify-content-between align-items-center py-3 px-lg-5 px-3"
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                預約資訊
+                <span class="material-icons-outlined">
+                    expand_more
+                </span>
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body reservationDone-border py-4 px-5">
+                    <h5 class="card-title text-start mb-4 fs-6 d-flex align-items-center">您預約的是<span
+                            class="reservationDone-decorate fs-5">首次體驗課程-基礎</span>
+                    </h5>
+                    <p class="card-text text-start mb-2">
+                        上課預約報到日：2021/07/21
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        預約人：Joanne Chen
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        年齡：18 歲
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        性別：女
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        電子信箱：example123@gmail.com
+                    </p>
+                    <p class="card-text text-start">
+                        手機號碼：0912-345-678
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mb-lg-26 col-md-6 mb-md-20 col-12 mb-22 mx-auto text-center">
+            <h5 class="fs-5 mb-2">上課注意事項</h5>
+            <p class="mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <button type="button" class="btn reservationDone-navButton w-100 rounded">返回首頁</button>
+        </div>
+    </div>
+</div>

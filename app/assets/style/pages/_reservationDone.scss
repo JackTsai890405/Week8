@@ -1,0 +1,18 @@
+.reservationDone {
+    color: #907a7b;
+
+    &-navButton {
+        background-color: #f5f0e7;
+        color: #907a7b;
+    }
+    &-navButtonActive {
+        background-color: #907a7b;
+        color: #ffffff;
+    }
+    &-border {
+        border: 1px solid #c0a4a5;
+    }
+    &-decorate {
+        color: #c0a4a5;
+    }
+}
