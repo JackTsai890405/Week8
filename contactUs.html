@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    <%- title %>
+    Contact Us
   </title>
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -51,7 +51,59 @@
     </div>
   </nav>
 
-  <%- contents %>
+  <section class="contact  mb-lg-275 mb-md-20 mb-22">
+    <div class="container">
+        <h1 class="fs-3 md-md-8 mb-6 text-center contact-title">聯絡我們</h1>
+        <div class="row gx-7">
+            <div class="col-lg-7 col-md-10 mx-auto col-12 mb-lg-0 mb-10">
+                <div class="card border-0">
+                    <img src="./assets/images/contact-maps.jpg" class="card-img-top Contact-maps mb-6" alt="maps">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 mb-2">DOYOGA 教室位置</h5>
+                        <p class="card-text mb-lg-2 mb-md-2 mb-2">
+                            高雄市苓雅區北信街 23 號 2 樓
+                        </p>
+                        <p class="card-text mb-6">
+                            如何前往：
+                            1. 搭乘捷運：紅線到正義站 3 號出口，延正義路 <br> 方向至北信街交叉口即可。
+                        </p>
+                        <p class="card-text mb-6">
+                            2. 搭乘公車：搭這些公車都可以抵達正義站 <br> 24B 25 33 50 76 77 77區 100
+                        </p>
+                        <p class="card-text">
+                            3. 開車前往北信街 32 號，教室旁有專屬停 <br> 車場可以使用。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-10 mx-auto col-12 p-8 bg-primary rounded">
+                <form class="">
+                    <h3 class="mb-md-6 mb-4">意見回饋&問題詢問</h3>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label mb-2">姓名</label>
+                        <input type="text" class="form-control px-md-3 px-4 py-2" id="exampleFormControlInput1"
+                            placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput2" class="form-label mb-2">電子信箱</label>
+                        <input type="email" class="form-control px-md-3 px-4 py-2" id="exampleFormControlInput2"
+                            placeholder="email@example.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput3" class="form-label mb-2">手機號碼</label>
+                        <input type="tel" class="form-control px-md-3 px-4 py-2" id="exampleFormControlInput3"
+                            placeholder="0912-345-678">
+                    </div>
+                    <div class="mb-md-6 mb-4">
+                        <label for="exampleFormControlTextarea1" class="form-label mb-2">意見回饋</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn contact-button d-block ms-auto">送出</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer class="container-fluid footer py-8 footer-backgroundColor">
       <section class="container">
