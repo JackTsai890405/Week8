@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Reservation Done
+  </title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary py-7 mb-md-16 mb-12">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand bg-cover" href="./index.html">DOYOGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons-outlined">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <!-- 介紹/瑜珈/課表 -->
+        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">課程介紹</a>
+          </li>
+          <li class="nav-item mx-lg-8">
+            <a class="nav-link" href="#">瑜珈空間</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">當月課表</a>
+          </li>
+        </ul>
+
+        <div>
+          <button type="button" class="btn nav-button rounded-pill">立即預約</button>
+          <button type="button" class="btn nav-button rounded-pill ms-4">聯絡我們</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container reservationDone">
+    <h1 class="fs-3 text-center reservationDone-title mb-md-4 mb-6">立即預約</h1>
+    <div class="row">
+        <div class="col-md-6 mb-md-7 col-12 mb-9 mx-auto text-center">
+            <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic example">
+                <button type="button" class="btn reservationDone-navButton rounded-pill">選擇方案</button>
+                <button type="button" class="btn reservationDone-navButton rounded-pill mx-md-75 mx-4">填寫資料</button>
+                <button type="button" class="btn reservationDone-navButtonActive rounded-pill">完成預約</button>
+            </div>
+        </div>
+    </div>
+    <span class="material-icons-outlined reservationDone-icon text-center mb-5 d-block">
+        check_circle
+    </span>
+    <h3 class="reservationDone-subtitle text-center fs-5 mb-8">已完成預約，以下是您的預約資訊:</h3>
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-12 mx-auto text-center flex-nowrap mb-6">
+            <a class="btn reservationDone-navButtonActive w-100 d-flex justify-content-between align-items-center py-3 px-lg-5 px-3"
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                預約資訊
+                <span class="material-icons-outlined">
+                    expand_more
+                </span>
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body reservationDone-border py-4 px-5">
+                    <h5 class="card-title text-start mb-4 fs-6 d-flex align-items-center">您預約的是<span
+                            class="reservationDone-decorate fs-5">首次體驗課程-基礎</span>
+                    </h5>
+                    <p class="card-text text-start mb-2">
+                        上課預約報到日：2021/07/21
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        預約人：Joanne Chen
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        年齡：18 歲
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        性別：女
+                    </p>
+                    <p class="card-text text-start mb-2">
+                        電子信箱：example123@gmail.com
+                    </p>
+                    <p class="card-text text-start">
+                        手機號碼：0912-345-678
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mb-lg-26 col-md-6 mb-md-20 col-12 mb-22 mx-auto text-center">
+            <h5 class="fs-5 mb-2">上課注意事項</h5>
+            <p class="mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <button type="button" class="btn reservationDone-navButton w-100 rounded">返回首頁</button>
+        </div>
+    </div>
+</div>
+
+    <footer class="container-fluid footer py-8 footer-backgroundColor">
+      <section class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <h3 class="mb-lg-0 mb-2">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="input-group">
+            <input type="text" class="form-control py-2 px-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <span class="input-group-text py-2 px-4" id="basic-addon2">訂閱</span>
+          </div>
+        </div>
+
+        <div></div>
+      </section>
+
+    </footer>
+    <footer class="container-fluid footer py-8 footer-backgroundColor">
+      <section class="container position-relative">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <a href="./index.html" class="bg-cover footer-logo"></a>
+          <ul class="d-flex">
+            <li>
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+            <li class="mx-2">
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mb-2 mb-md-0">
+          <li><a href="#">課程介紹</a></li>
+          <li class="my-2"><a href="#">瑜珈空間</a></li>
+          <li><a href="#">當月課表</a></li>
+        </ul>
+        <p class="footer-copyright">© 2021. All Rights Reserved.</p>
+
+      </section>
+
+    </footer>
+
+    <!-- fix fb/ig/line icon -->
+    <nav class="nav flex-column fix position-fixed top-50 end-0 translate-middle-y me-4 d-none d-lg-block">
+      <a class="nav-link" href="#">
+        <span class="material-icons fix-icon">
+          face
+        </span>
+      </a>
+      <a class="nav-link fix-icon my-2" href="#">
+        <span class="material-icons-outlined fix-icon">
+          light
+        </span>
+      </a>
+      <a class="nav-link fix-icon" href="#">
+        <span class="material-icons-outlined fix-icon">
+          savings
+        </span>
+      </a>
+    </nav>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
