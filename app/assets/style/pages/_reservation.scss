@@ -1,0 +1,23 @@
+.reservation {
+    color: #907a7b;
+
+    &-navButton {
+        background-color: #f5f0e7;
+        color: #907a7b;
+    }
+    &-navButtonActive {
+        background-color: #907a7b;
+        color: #ffffff;
+    }
+    &-image {
+        height: 248.5px;
+        object-fit: cover;
+    }
+}
+@media (min-width: 768px) {
+    .reservation {
+        &-image {
+            height: 248.5px;
+        }
+    }
+}
