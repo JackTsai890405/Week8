@@ -1,0 +1,23 @@
+.navbar {
+    &-brand {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA-logo.png);
+        width: 96px;
+        height: 31px;
+        white-space: nowrap; /* 規定段落中的文字不得進行換行 */
+        text-indent: 101%; /* 強迫文字縮排至原本的區域外 */
+        overflow: hidden; /* 將超出範圍的內容隱藏 */
+    }
+    &-toggler {
+        color: #707070;
+        border-color: rgba(0, 0, 0, 0);
+    }
+    .nav {
+        &-link {
+            color: #707070;
+        }
+        &-button {
+            color: #907a7b;
+            border: 1px solid #907a7b;
+        }
+    }
+}

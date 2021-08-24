@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary py-7 mb-md-16 mb-12">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand bg-cover" href="./index.html">DOYOGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons-outlined">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <!-- 介紹/瑜珈/課表 -->
+        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">課程介紹</a>
+          </li>
+          <li class="nav-item mx-lg-8">
+            <a class="nav-link" href="#">瑜珈空間</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">當月課表</a>
+          </li>
+        </ul>
+
+        <div>
+          <button type="button" class="btn nav-button rounded-pill">立即預約</button>
+          <button type="button" class="btn nav-button rounded-pill ms-4">聯絡我們</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+    <footer class="container-fluid footer py-8 footer-backgroundColor">
+      <section class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <h3 class="mb-lg-0 mb-2">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="input-group">
+            <input type="text" class="form-control py-2 px-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <span class="input-group-text py-2 px-4" id="basic-addon2">訂閱</span>
+          </div>
+        </div>
+
+        <div></div>
+      </section>
+
+    </footer>
+    <footer class="container-fluid footer py-8 footer-backgroundColor">
+      <section class="container position-relative">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <a href="./index.html" class="bg-cover footer-logo"></a>
+          <ul class="d-flex">
+            <li>
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+            <li class="mx-2">
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+            <li>
+              <a href="#"><span class="material-icons-outlined">
+                  sentiment_satisfied
+                </span></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mb-2 mb-md-0">
+          <li><a href="#">課程介紹</a></li>
+          <li class="my-2"><a href="#">瑜珈空間</a></li>
+          <li><a href="#">當月課表</a></li>
+        </ul>
+        <p class="footer-copyright">© 2021. All Rights Reserved.</p>
+
+      </section>
+
+    </footer>
+
+    <!-- fix fb/ig/line icon -->
+    <nav class="nav flex-column fix position-fixed top-50 end-0 translate-middle-y me-4 d-none d-lg-block">
+      <a class="nav-link" href="#">
+        <span class="material-icons fix-icon">
+          face
+        </span>
+      </a>
+      <a class="nav-link fix-icon my-2" href="#">
+        <span class="material-icons-outlined fix-icon">
+          light
+        </span>
+      </a>
+      <a class="nav-link fix-icon" href="#">
+        <span class="material-icons-outlined fix-icon">
+          savings
+        </span>
+      </a>
+    </nav>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
