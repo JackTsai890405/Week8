@@ -17923,6 +17923,32 @@ li {
   background: #c0a4a5;
 }
 
+.reservation {
+  color: #907a7b;
+}
+
+.reservation-navButton {
+  background-color: #f5f0e7;
+  color: #907a7b;
+}
+
+.reservation-navButtonActive {
+  background-color: #907a7b;
+  color: #ffffff;
+}
+
+.reservation-image {
+  height: 248.5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .reservation-image {
+    height: 248.5px;
+  }
+}
+
 .reservationDone {
   color: #907a7b;
 }
