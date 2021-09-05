@@ -17861,14 +17861,21 @@ li {
   color: #707070;
 }
 
+.navbar .nav-link:hover {
+  font-weight: bold;
+}
+
 .navbar .nav-button {
   color: #907a7b;
   border: 1px solid #907a7b;
 }
 
+.navbar .nav-button:hover {
+  font-weight: bold;
+}
+
 .footer {
   color: #ffffff;
-  border-bottom: 1px solid #ffffff;
 }
 
 .footer-backgroundColor {
@@ -17888,6 +17895,17 @@ li {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png);
   width: 96px;
   height: 31px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+
+.border-white {
+  border: 1px solid #ffffff;
+}
+
+.border-bottom-white {
+  border-bottom: 1px solid #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -17923,16 +17941,20 @@ li {
   background: #c0a4a5;
 }
 
+.contact iframe {
+  margin-bottom: 24px;
+}
+
 .reservation {
   color: #907a7b;
 }
 
-.reservation-navButton {
+.reservation-nav {
   background-color: #f5f0e7;
   color: #907a7b;
 }
 
-.reservation-navButtonActive {
+.reservation-navActive {
   background-color: #907a7b;
   color: #ffffff;
 }

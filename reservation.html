@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/style/bootstrap.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -55,16 +54,15 @@
     <div class="container">
         <div class="row">
             <h1 class="fs-3 text-center reservation-title mb-md-4 mb-6">立即預約</h1>
-            <div class="col-md-6 mb-md-7 col-12 mb-9 mx-auto text-center">
-                <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic example">
-                    <button type="button" class="btn reservation-navButtonActive rounded-pill">選擇方案</button>
-                    <button type="button" class="btn reservation-navButton rounded-pill mx-md-75 mx-4">填寫資料</button>
-                    <button type="button" class="btn reservation-navButton rounded-pill">完成預約</button>
-                </div>
-            </div>
+            <ol class="mb-9 text-center d-flex justify-content-center">
+                <li class="reservation-navActive rounded-pill col-md-2">選擇方案</li>
+                <li class="reservation-nav rounded-pill mx-md-75 mx-4 col-md-2">填寫資料</li>
+                <li class="reservation-nav rounded-pill col-md-2">完成預約</li>
+            </ol>
+
         </div>
-        <div class="row text-lg-center text-md-start text-center mb-lg-8 mb-md-12 mb-10">
-            <div class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
+        <ul class="row text-lg-center text-md-start text-center mb-lg-8 mb-md-12 mb-10">
+            <li class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
                 <div class="card rounded d-flex flex-lg-column flex-md-row flex-column">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg"
                         class="card-img-top reservation-image" alt="woman">
@@ -72,11 +70,11 @@
                         <h5 class="card-title fs-5 mb-1 ">首次體驗</h5>
                         <p class="card-text fs-5 mb-2">NT $450 / 次</p>
                         <p class="card-text mb-lg-10 mb-md-6 mb-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                        <a href="#" class="btn reservation-navButtonActive fs-5 w-100">選擇課程</a>
+                        <a href="#" class="btn reservation-navActive fs-5 w-100">選擇課程</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
+            </li>
+            <li class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
                 <div class="card rounded d-flex flex-lg-column flex-md-row flex-column">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20performing%20yoga.jpg"
                         class="card-img-top reservation-image" alt="performing">
@@ -84,11 +82,11 @@
                         <h5 class="card-title fs-5 mb-1">短期體驗</h5>
                         <p class="card-text fs-5 mb-2">NT $1800 / 月</p>
                         <p class="card-text mb-lg-10 mb-md-6 mb-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                        <a href="#" class="btn reservation-navButtonActive fs-5 w-100">選擇課程</a>
+                        <a href="#" class="btn reservation-navActive fs-5 w-100">選擇課程</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
+            </li>
+            <li class="col-lg-4 col-12 mb-lg-0 mb-md-6 mb-4">
                 <div class="card rounded d-flex flex-lg-column flex-md-row flex-column">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg"
                         class="card-img-top reservation-image" alt="leggings">
@@ -96,12 +94,12 @@
                         <h5 class="card-title fs-5 mb-2">長期體驗</h5>
                         <p class="card-text fs-5">NT $5600 / 季</p>
                         <p class="card-text mb-lg-10 mb-md-6 mb-10">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                        <a href="#" class="btn reservation-navButtonActive fs-5 w-100">選擇課程</a>
+                        <a href="#" class="btn reservation-navActive fs-5 w-100">選擇課程</a>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            </li>
+        </ul>
+        <!-- 預約須知 -->
         <div class="row">
             <h3 class="fs-3 mb-4 text-center">預約須知</h3>
             <ul class="col-lg-5 col-md-8 col-12 mx-auto">
@@ -109,30 +107,26 @@
                 <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
                 <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
                 <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+                </li>
             </ul>
         </div>
     </div>
 </section>
 
-    <footer class="container-fluid footer py-8 footer-backgroundColor">
-      <section class="container">
-        <div class="d-flex flex-wrap justify-content-between align-items-center">
+    <footer class="footer footer-backgroundColor py-8">
+      <section class="container position-relative">
+        <!-- Footer 上半部 -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom-white pb-8 mb-8">
           <h3 class="mb-lg-0 mb-2">現在訂閱，獲得課程優惠碼！</h3>
           <div class="input-group">
             <input type="text" class="form-control py-2 px-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
-            <span class="input-group-text py-2 px-4" id="basic-addon2">訂閱</span>
+              aria-describedby="button-addon2">
+            <button class="btn input-group-text border-white" type="button" id="button-addon2">訂閱</button>
           </div>
         </div>
-
-        <div></div>
-      </section>
-
-    </footer>
-    <footer class="container-fluid footer py-8 footer-backgroundColor">
-      <section class="container position-relative">
+        <!-- Footer 下半部 -->
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <a href="./index.html" class="bg-cover footer-logo"></a>
+          <a href="./index.html" class="bg-cover footer-logo">DOYOGA</a>
           <ul class="d-flex">
             <li>
               <a href="#"><span class="material-icons-outlined">
@@ -158,29 +152,33 @@
           <li><a href="#">當月課表</a></li>
         </ul>
         <p class="footer-copyright">© 2021. All Rights Reserved.</p>
-
       </section>
-
     </footer>
 
     <!-- fix fb/ig/line icon -->
-    <nav class="nav flex-column fix position-fixed top-50 end-0 translate-middle-y me-4 d-none d-lg-block">
-      <a class="nav-link" href="#">
-        <span class="material-icons fix-icon">
-          face
-        </span>
-      </a>
-      <a class="nav-link fix-icon my-2" href="#">
-        <span class="material-icons-outlined fix-icon">
-          light
-        </span>
-      </a>
-      <a class="nav-link fix-icon" href="#">
-        <span class="material-icons-outlined fix-icon">
-          savings
-        </span>
-      </a>
-    </nav>
+    <ul class="nav flex-column fix position-fixed top-50 end-0 translate-middle-y me-4 d-none d-lg-block">
+      <li>
+        <a class="nav-link" href="#">
+          <span class="material-icons fix-icon">
+            face
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link fix-icon my-2" href="#">
+          <span class="material-icons-outlined fix-icon">
+            light
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link fix-icon" href="#">
+          <span class="material-icons-outlined fix-icon">
+            savings
+          </span>
+        </a>
+      </li>
+    </ul>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
