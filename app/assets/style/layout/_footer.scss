@@ -1,6 +1,5 @@
 .footer {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
     &-backgroundColor {
         background-color: #c0a4a5;
     }
@@ -15,9 +14,19 @@
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png);
         width: 96px;
         height: 31px;
+        white-space: nowrap;
+        text-indent: 101%;
+        overflow: hidden;
     }
 }
-@media (min-width: 768px) {
+.border-white {
+    border: 1px solid #ffffff;
+}
+.border-bottom-white {
+    border-bottom: 1px solid #ffffff;
+}
+
+@include media-breakpoint-up(md) {
     .footer {
         .input-group {
             width: 50%;
@@ -30,7 +39,8 @@
         }
     }
 }
-@media (min-width: 992px) {
+
+@include media-breakpoint-up(lg) {
     .footer {
         .input-group {
             width: 33.33%;

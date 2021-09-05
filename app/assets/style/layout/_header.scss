@@ -14,10 +14,16 @@
     .nav {
         &-link {
             color: #707070;
+            &:hover {
+                font-weight: bold;
+            }
         }
         &-button {
             color: #907a7b;
             border: 1px solid #907a7b;
+            &:hover {
+                font-weight: bold;
+            }
         }
     }
 }
